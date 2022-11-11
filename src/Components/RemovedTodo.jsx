@@ -1,9 +1,9 @@
 import React from 'react'
 
-function CompletedTask({toDos}) {
+function RemovedTodo({toDos}) {
   return (
     <div className='todo-main'>
-       <h1>Completed Task</h1>
+       <h1>removed Task</h1>
      <div>
         {toDos.map((obj, index)=>{
           if(obj.status){
@@ -17,4 +17,4 @@ function CompletedTask({toDos}) {
   )
 }
 
-export default CompletedTask
+export default RemovedTodo

@@ -9,16 +9,18 @@ function Todolist({
 }) {
   return (
     <div className='todo-main'>
-        <div className="input">
+       <h1>What's the Plan for Today?</h1>
+        <div className="todo-form">
            <input 
+           className='todo-input'
            value={toDo} 
            onChange={(e)=>setTodo(e.target.value)} 
            type="text" 
            placeholder="🖊️ Add item..." />
-           <i 
+           <button 
            onClick={()=>setTodos([...toDos,{id:Date.now() ,text: toDo,status:false}])} 
-           className="fas fa-plus">
-            </i> 
+           className="todo-button">+
+            </button> 
         </div>
         <div className="todos">
             { toDos.map((obj, index) =>{

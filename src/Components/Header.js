@@ -7,14 +7,12 @@ var dayName = days[new Date().getDay()];
 function Header() {
   return (
     <div className='todo-header'>
-    <div className="mainHeading">
-      <h1>ToDo List</h1>
-    </div>
-    <div className="subHeading">
-      <br />
+      <div className="Heading">
+       <h1>ToDo List</h1>
+        <br />
       <h2>Whoop, it's {dayName} 🌝 ☕ </h2>
-    </div>
-  </div>
+     </div>
+   </div>
   )
 }
 
