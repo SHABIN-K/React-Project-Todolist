@@ -3,7 +3,7 @@ import React from 'react'
 function RemovedTodo({toDos}) {
   return (
     <div className='todo-main'>
-       <h1>removed Task</h1>
+       <h1>Removed Task</h1>
      <div>
         {toDos.map((obj, index)=>{
           if(obj.status){

@@ -32,11 +32,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 400px;
-    min-height: 500px;
+    min-height: 430px;
     background: #161a2b;
     text-align: center;
     margin: 40px auto;
     border-radius: 10px;
+    margin-top: 0.5em;
     padding-bottom: 32px;
   }
   
@@ -69,11 +70,12 @@ body {
   .todo-button {
     padding: 16px;
     border: none;
-    font-size: 180%;
+    font-weight: bold;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
     background: linear-gradient(
+
       90deg,
       rgba(93, 12, 255, 1) 0%,
       rgba(155, 0, 250, 1) 100%
@@ -81,31 +83,35 @@ body {
     color: #fff;
     text-transform: capitalize;
   }
-  
-  
-  .app i {
+
+  .app .todo-button i {
     cursor: pointer;
-    font-size: larger;
-    font-weight: 900;
-    color: grey;
+    font-weight: bold;
+    color: white;
     margin-right: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
   }
+  
+  
+
   .app .todos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
   .app .todos .todo {
-    margin-top: 0.8em;
-    width: 20em;
-    height: 2em;
-    background-color: white;
+    margin: 4px auto;
+    width: 90%;
+    height: 3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 6px;
-    padding: 5px;
+    padding: 16px;
+    background-color: aqua;
   }
   .app .todos .todo .left {
     display: flex;
@@ -115,10 +121,21 @@ body {
   
   .app .todos .todo .left p {
     margin-left: 3px;
-    font-size: medium;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 7000;
     font-style: normal;
-    color: grey;
+    color: black;
+  }
+zcCcCg
+
+  .app i {
+    cursor: pointer;
+    font-weight: bold;
+    color: green;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
   }
   
   @media (min-width: 360px) and (max-width: 767px) {

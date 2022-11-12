@@ -14,8 +14,8 @@ function App() {
   const [toDo,setTodo] = useState('')
   return (
     <div className="app">
+      <Header/>
       <div className="row">
-       <Header/>
        <Todolist
         toDos={toDos}
         setTodos={setTodos}

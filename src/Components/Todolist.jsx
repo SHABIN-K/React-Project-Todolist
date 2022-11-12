@@ -19,7 +19,7 @@ function Todolist({
            placeholder="🖊️ Add item..." />
            <button 
            onClick={()=>setTodos([...toDos,{id:Date.now() ,text: toDo,status:false}])} 
-           className="todo-button">+
+           className="todo-button"><i className="fas fa-plus todo-button-icon"></i>
             </button> 
         </div>
         <div className="todos">
