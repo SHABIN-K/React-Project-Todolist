@@ -5,6 +5,7 @@ function Todolist({
     toDo,
     setTodo,
     toDos,
+    deleteTodo,
     setTodos,
 }) {
   return (
@@ -18,7 +19,7 @@ function Todolist({
            type="text" 
            placeholder="🖊️ Add item..." />
            <button 
-           onClick={()=>setTodos([...toDos,{id:Date.now() ,text: toDo,status:false}])} 
+           onClick={()=>setTodos([...toDos,{id:Date.now() ,text: toDo, status:false}])} 
            className="todo-button"><i className="fas fa-plus todo-button-icon"></i>
             </button> 
         </div>
@@ -43,7 +44,7 @@ function Todolist({
             <p>{obj.text}</p>
           </div>
           <div className="right">
-            <i className="fas fa-times"></i>
+            <i onClick={() => deleteTodo(obj.id)} className="fas fa-times"></i>
           </div>
         </div>
         )})}

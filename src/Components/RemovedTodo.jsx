@@ -1,18 +1,30 @@
 import React from 'react'
 
-function RemovedTodo({toDos}) {
+function RemovedTodo({
+  toDo,
+  setTodo,
+  toDos,
+  deleteTodo,
+  setTodos,
+}) {
   return (
     <div className='todo-main'>
        <h1>Removed Task</h1>
-     <div>
-        {toDos.map((obj, index)=>{
-          if(obj.status){
-            return(<div key={index}><h1>{obj.text}</h1></div>
+       <div className="todo-from">
+        <div className="todos">
+          {toDos.map((obj,index,text,checked,deleted) =>{
+            if (!checked && !deleted) return null;
+            if (!deleted) return null;
+            return(
+              <div className="todo" key={index}>
+                <div className="left">
+                  <p>{obj.text}</p>
+                </div>
+              </div>
             )
-          }
-          return null
-         })}    
-     </div>
+          })}
+        </div>
+       </div>
     </div>
   )
 }
